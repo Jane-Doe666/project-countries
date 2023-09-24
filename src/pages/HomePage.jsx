@@ -17,6 +17,7 @@ export const HomePage = () => {
 	const navigate = useNavigate();
 	const dispatch = useDispatch();
 	const { search, region } = useSelector(selectControls);
+
 	const countries = useSelector((state) =>
 		selectVisibleCountries(state, { search, region })
 	);
